@@ -64,7 +64,7 @@ const tabooList = computed(() => {
     <img class="portrait--decklist" :src="imgsrc(`cards/${deckInvestigator}.avif`)" />
     <div class="deck-details">
       <span class="deck-title"><router-link :to="{ name: 'Deck', params: { deckId: deck.id }}">{{deck.name}}</router-link></span>
-      <span v-if="tabooList" class="taboo-list">Taboo: {{tabooList}}</span>
+      <span v-if="tabooList" class="taboo-list">{{$t("taboo")}}: {{tabooList}}</span>
     </div>
     <div class="open-deck">
       <a v-if="deck.url" :href="deckUrlToPage(deck.url)" target="_blank" rel="noreferrer noopener"><font-awesome-icon alt="View Deck in ArkhamDB" icon="external-link" /></a>

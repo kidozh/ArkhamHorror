@@ -24,7 +24,7 @@ const updateLanguage = (a: Event) => {
 
       <fieldset class="box column">
         <legend>{{$t('language')}}</legend>
-        <p>This will change the language of the cards and app, but will default to English if a card or text is not available in the selected language.</p>
+        <p>{{$t('languageSettingDescription')}}</p>
         <select v-model="$i18n.locale" @change="updateLanguage">
           <option value="en">English</option>
           <option value="it">Italiano</option>
@@ -34,11 +34,11 @@ const updateLanguage = (a: Event) => {
       </fieldset>
 
       <fieldset class="box column">
-        <legend>Enroll in beta</legend>
-        <p>Beta features are likely very broken and games may be unrecoverable, please only enable this if you are willing to provide feedback.</p>
+        <legend>{{$t('enrollInBeta')}}</legend>
+        <p>{{$t('enrollInBetaDescription')}}</p>
         <div class="row">
-          <label>On <input type="radio" name="beta" value="On" v-model="beta" @change="betaUpdate" /></label>
-          <label>Off <input type="radio" name="beta" value="Off" v-model="beta" @change="betaUpdate" /></label>
+          <label>{{$t('enrollInBetaOn')}} <input type="radio" name="beta" value="On" v-model="beta" @change="betaUpdate" /></label>
+          <label>{{$t('enrollInBetaOff')}} <input type="radio" name="beta" value="Off" v-model="beta" @change="betaUpdate" /></label>
         </div>
       </fieldset>
     </div>

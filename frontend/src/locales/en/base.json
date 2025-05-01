@@ -13,7 +13,12 @@
   "invalidEmailOrPassword": "Invalid email or password",
   "language": "Language",
   "logIn": "Log in",
+  "login": "Login",
+  "logout": "Logout",
+  "newDeck": "New Deck",
   "myDecks": "My Decks",
+  "existingDecks": "Existing Decks",
+  "noDeckFound":"You currently have no decks.",
   "newGame": "New Game",
   "newPassword": "New Password",
   "password": "Password",
@@ -51,5 +56,12 @@
   "ChooseOne": "Choose one",
   "Choose": "Choose",
   "setup": "Setup",
-  "addToken": "Add 1 {'{'}{token}{'}'} chaos token to the chaos bag for the remainder of the campaign."
+  "addToken": "Add 1 {'{'}{token}{'}'} chaos token to the chaos bag for the remainder of the campaign.",
+  "languageSettingDescription": "This will change the language of the cards and app, but will default to English if a card or text is not available in the selected language.",
+  "enrollInBeta": "Enroll in beta",
+  "enrollInBetaDescription": "Beta features are likely very broken and games may be unrecoverable, please only enable this if you are willing to provide feedback.",
+  "enrollInBetaOn": "On",
+  "enrollInBetaOff": "Off",
+  "taboo": "Taboo",
+  "includeEncounter": "Include Encounter"
 }

@@ -34,12 +34,12 @@ async function logout() {
           </label>
           <div v-if="expanded" class="user-links--dropdown">
             <router-link @click="expanded = false" to="/settings">{{$t('settings')}}</router-link>{{' '}}
-            <a href="#" @click="logout">Logout</a>
+            <a href="#" @click="logout">{{$t('logout')}}</a>
           </div>
         </template>
         <template v-else>
-          <router-link to="/sign-in">Login</router-link>{{' '}}
-          <router-link to="/sign-up">Register</router-link>
+          <router-link to="/sign-in">{{$t('login')}}</router-link>{{' '}}
+          <router-link to="/sign-up">{{$t('register')}}</router-link>
         </template>
       </span>
     </OnClickOutside>

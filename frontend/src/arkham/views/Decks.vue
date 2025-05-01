@@ -68,18 +68,18 @@ function toggleClass(c: string) {
   <div class="page-container">
     <div id="decks" class="page-content column">
       <section>
-        <header><h2 class="title">New Deck</h2></header>
+        <header><h2 class="title">{{$t("newDeck")}}</h2></header>
         <NewDeck @new-deck="addDeck"/>
       </section>
       <section class="column">
-        <h2 class="title">Existing Decks</h2>
+        <h2 class="title">{{$t("existingDecks")}}</h2>
         <section>
           <ul class="button-list">
             <li v-for="iclass in allClasses" :key="iclass" :class="{ [iclass]: true, off: !filter.classes.includes(iclass) }" @click="toggleClass(iclass)"><span :class="{ [`${iclass}-icon`]: true }"></span> {{capitalize(iclass)}}</li>
           </ul>
         </section>
         <div v-if="decks.length == 0" class="box">
-          <p>You currently have no decks.</p>
+          <p>{{$t("noDeckFound")}}</p>
         </div>
         <div v-else class="decks column">
           <transition-group name="deck">

@@ -13,7 +13,12 @@
   "invalidEmailOrPassword": "无效的邮箱或密码",
   "language": "语言",
   "logIn": "登录",
+  "login": "登陆",
+  "logout": "登出",
+  "newDeck": "新牌组",
   "myDecks": "我的牌组",
+  "existingDecks": "现有牌组",
+  "noDeckFound":"目前还没有牌组。",
   "newGame": "新游戏",
   "newPassword": "新密码",
   "password": "密码",
@@ -51,5 +56,12 @@
   "ChooseOne": "选择一项",
   "Choose": "选择",
   "setup": "设置",
-  "addToken": "向混乱袋中加入一个 {'{'}{token}{'}'} 混乱标记，并持续到剧本结束。"
+  "addToken": "向混乱袋中加入一个 {'{'}{token}{'}'} 混乱标记，并持续到剧本结束。",
+  "languageSettingDescription": "这将更改卡片和应用程序的语言，但如果卡片或文本没有所选语言，则默认为英语。",
+  "enrollInBeta": "注册测试版",
+  "enrollInBetaDescription": "测试版功能可能会非常残缺，游戏可能无法恢复，请仅在愿意提供反馈意见的情况下启用此功能。",
+  "enrollInBetaOn": "开启",
+  "enrollInBetaOff": "关闭",
+  "taboo": "禁卡表",
+  "includeEncounter": "包含遭遇牌"
 }

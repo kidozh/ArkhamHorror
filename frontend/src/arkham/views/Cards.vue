@@ -318,7 +318,7 @@ const setSet = (set: CardSet) => {
         <div>
           <label for="include-encounter">
             <input type="checkbox" v-model="includeEncounter" id="include-encounter" />
-            Include Encounter
+            {{$t("includeEncounter")}}
           </label>
         </div>
       </header>
